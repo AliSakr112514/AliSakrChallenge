@@ -1,0 +1,2 @@
+ERROR: 2022/09/26 02:11:33 config.go:34: Failed to locate configurations. %v  open resources\environment\configmap.yaml: The system cannot find the path specified.
+ERROR: 2022/09/26 02:12:42 config.go:34: Failed to locate configurations. %v  open resources\environment\configmap.yaml: The system cannot find the path specified.

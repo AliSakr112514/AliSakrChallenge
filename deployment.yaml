@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project_1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: project_1
+  template:
+    metadata:
+      labels:
+        app: project_1
+    spec:
+      containers:
+        - name: challenge-container
+          image: alisakr96/project_1
+          resources:
+            limits:
+              memory: "150Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080
